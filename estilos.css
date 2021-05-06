@@ -1,0 +1,124 @@
+:root {
+    --negro: #212121;
+    --blanco: #ffffff;
+    --gris: #515151;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+fieldset {
+    display: flex;
+    width: 40%;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.txt-negro {
+    color: var(--negro);
+}
+
+.txt-blanco {
+    color: var(--blanco);
+}
+
+/* nav */
+.nav {
+    display: flex;
+    background-color: #c3dcf5;
+}
+
+.ctn-enlaces {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* main */
+.main {
+    width: 95%;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.ctn-section {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .ctn-section {
+        flex-direction: row;
+    }
+}
+
+.article-formulario,
+.article-tabla {
+    flex-basis: 50%;
+}
+
+.field-genero {
+    display: flex;
+}
+
+.ctn-section-libros {
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    column-gap: .5rem;
+    padding: 2rem 0;
+    row-gap: .5rem;
+}
+
+@media (min-width: 900px) {
+    .ctn-section-libros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .ctn-section-libros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.section-libro {
+    background-color: #f5f4f4;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    min-height: 70rem;
+}
+
+/* footer */
+.footer {
+    padding: 1.5rem;
+    background-color: #212121;
+    text-align: center;
+    clear: both;
+}
